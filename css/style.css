@@ -1,0 +1,288 @@
+/* #00b41e */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto-Black;
+    src: url("../fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url("../fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url("../fonts/Roboto-Thin.ttf");
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: Roboto-Regular;
+}
+
+.container{
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.hero-section{
+    height: 80vh;
+    background: linear-gradient(0deg, rgba(14, 24, 9, 0.7), rgba(14, 24, 9, 0.7)), url(../img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.main-nav{
+    display: flex;
+    font-family: Roboto-Medium;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.logo{
+    width: 30%;
+}
+
+.logo img{
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.main-nav ul{
+    width: 70%;
+    //background: blue;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+/* ul li{
+    margin-left: 60px;
+} */
+
+.hero-contain{
+    display: flex;
+}
+
+.empty{
+    width: 30%;
+    height: 50px;
+    //background: blue;
+}
+
+.ctas{
+    margin-top: 70px;
+}
+
+.empty{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.circles{
+    margin-top: 100px;
+    position: absolute;
+    top: 280px;
+    left: 0;
+}
+
+.circles span{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+}
+.contain{
+    height: 50px;
+    //background-color: red;
+    width: 70%;
+}
+
+.ctas ul{
+    list-style: none;
+    display: flex;
+    font-family: Roboto-Medium;
+    align-items: center;
+}
+
+.ctas ul li a{
+    display: block;
+    margin-right: 50px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.donate{
+    background-color: #00b41e;
+    padding: 15px 40px;
+    border-radius: 20px;
+}
+
+.contain h1{
+    font-size: 35px;
+    color: white;
+    font-family: Roboto-Medium;
+    margin-top: 20px;
+    line-height: 1.4;
+    letter-spacing: 3px;
+}
+
+.ctas-volunteer{
+    margin-top: 50px;
+    font-family: Roboto-Medium;
+    text-align: center;
+}
+
+.ctas-volunteer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ctas-volunteer li{
+    width: 50%;
+    margin-right: 40px;
+}
+
+.ctas-volunteer ul li a{
+    display: block;
+}
+
+.volunteer{
+    background-color: #00b41e;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.figures{
+    background: #00b41e;
+    height: 20vh;
+    display: flex;
+    color: white;
+    text-align: center;
+    font-family: Roboto-Medium;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure-center{
+    margin: 0 150px;
+}
+
+.figures h4{
+    font-size: 40px;
+}
+
+.vol-blog-section{
+    width: 98%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.blog-cards{
+    width: 70%;
+    border-radius: 5px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px 10px
+}
+
+.cards-row{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.cards-row .card{
+    border-bottom: 0 none;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+    width: 30%;
+    background: white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-body{
+    padding: 10px;
+}
+
+.card-body .location{
+    color: #00b41e;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.card-body .location span img{
+    width: 15px;
+}
+
+.card-body .date{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.cards-row .card-img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 160px;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.opportunity{
+    border-bottom: 0 none;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+    width: 26%;
+}
+
+.opportunity h3{
+    padding: 10px;
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.opportunity span{
+    margin-top: 20px;
+}
+
+.opportunity span img{
+    width: 20px;
+    margin-top: 5px;
+}

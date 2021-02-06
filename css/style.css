@@ -1,10 +1,10 @@
-/* #00b41e */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Downloaded google fonts */
 @font-face {
     font-family: Roboto-Black;
     src: url("../fonts/Roboto-Black.ttf");
@@ -35,15 +35,18 @@
     src: url("../fonts/Roboto-Thin.ttf");
 }
 
-a{
-    color: #fff;
-    text-decoration: none;
-}
 
 body{
     width: 100%;
     height: 100%;
     font-family: Roboto-Regular;
+    overflow-x: hidden;
+}
+
+
+a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .container{
@@ -79,15 +82,15 @@ body{
 
 .main-nav ul{
     width: 70%;
-    //background: blue;
     display: flex;
     justify-content: space-between;
     list-style: none;
+    font-family: Roboto-Regular;
 }
 
-/* ul li{
-    margin-left: 60px;
-} */
+.main-nav ul .search{
+    width: 20px;
+}
 
 .hero-contain{
     display: flex;
@@ -118,12 +121,18 @@ body{
 }
 
 .circles span{
-    width: 10px;
-    height: 10px;
+    width: 13px;
+    height: 13px;
     display: inline-block;
     background-color: white;
     border-radius: 50%;
+    margin: 3px;
 }
+
+.circles span:first-child{
+    background-color: #ccc;
+}
+
 .contain{
     height: 50px;
     //background-color: red;
@@ -153,7 +162,7 @@ body{
 .contain h1{
     font-size: 35px;
     color: white;
-    font-family: Roboto-Medium;
+    font-family: Roboto-Regular;
     margin-top: 20px;
     line-height: 1.4;
     letter-spacing: 3px;
@@ -197,6 +206,11 @@ body{
     align-items: center;
 }
 
+.figures img{
+    width: 30px;
+    margin: 10px;
+}
+
 .figure-center{
     margin: 0 150px;
 }
@@ -205,18 +219,35 @@ body{
     font-size: 40px;
 }
 
+.headlines{
+    display: flex;
+    width: 98%;
+    color:#00b41e;
+    margin-top: 45px;
+}
+
+.cards-headline{
+    width: 70%;
+    text-align: center;
+}
+
+.opportunity-headline{
+    width: 26%;
+    text-align: center;
+}
+
 .vol-blog-section{
     width: 98%;
     padding: 20px;
     margin: 0 auto;
     display: flex;
-    margin-top: 30px;
+    margin-top: 5px;
     justify-content: space-between;
 }
 
 .blog-cards{
     width: 70%;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     padding: 20px 10px
 }
@@ -270,19 +301,218 @@ body{
     border-bottom: 0 none;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
     width: 26%;
+    border-radius: 10px;
 }
 
 .opportunity h3{
     padding: 10px;
     margin: 6px 0;
     font-size: 15px;
+    position: relative;
 }
 
 .opportunity span{
-    margin-top: 20px;
+    position: absolute;
+    top: 3px;
+    margin-left: 5px;
 }
 
 .opportunity span img{
-    width: 20px;
-    margin-top: 5px;
+    width: 35px;
 }
+
+.see-all{
+    width: 100px;
+    margin: 10px auto;
+    padding: 10px;
+    background: white;
+    border:1px solid #00b41e;
+    display: block;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.partners{
+    width: 80%;
+    margin: 40px auto;
+    margin-bottom: 170px;
+}
+
+.partners h3{
+    text-align: center;
+    color: #00b41e;
+    margin: 20px;
+}
+.partners-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.partner{
+    width: 120px;
+    height: 40px;
+}
+
+.partner img{
+    width: 100%;
+}
+
+.social-media-section{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.social-media-section h3{
+    color: #00b41e;
+    text-align: center;
+    margin: 70px;
+}
+
+.social-media-cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.social-media-cards .card{
+    width: 30%;
+    height: 170px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: relative;
+    padding-top: 30px;
+}
+
+.card .logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: -32px;
+    left: 110px;
+    z-index: 100;
+}
+
+.card .logo img{
+    width: 100%;
+}
+
+.card p{
+    text-align: center;
+    line-height: 25px;
+}
+
+.newsfeed-container{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.newsfeed-container h2{
+    text-align: center;
+    color:#00b41e;
+    margin-bottom: 20px;
+}
+
+.newsfeed{
+    width: 70%;
+    margin: 0 auto;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 70px 50px;
+    border-radius: 10px;
+}
+
+.newsfeed h3{
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.quicklinks{
+    width: 100vw;
+    height: 600px;
+    background: linear-gradient(0deg, rgba(14, 24, 9, 0.9), rgba(14, 24, 9, 0.9)), url(../img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.quicklinks h2{
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+
+.quicklinks .links{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.links .link{
+    color: white;
+    text-align: center;
+}
+
+.link p{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+
+.quicklinks .profile{
+    display: block;
+    width: 160px;
+    padding: 15px;
+    margin: 10px auto;
+    border:2px solid #00b41e;
+}
+
+.quicklinks h3{
+    text-align: center;
+    color: white;
+    margin: 40px 0;
+    letter-spacing: 3px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons img{
+    width: 25px;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.card-body p{
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00b41e;
+}
+
+footer .col{
+    width: 50%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+footer .col:first-child{
+    border-right: 2px solid white;
+}
+
